@@ -6,8 +6,24 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		65C365292F4DC0B40061C202 /* VARDashboard_macOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C365282F4DC0B40061C202 /* VARDashboard_macOSApp.swift */; };
+		65C3652B2F4DC0B40061C202 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C3652A2F4DC0B40061C202 /* DashboardView.swift */; };
+		65C3653A2F4DC17F0061C202 /* MultiCameraGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C365392F4DC1790061C202 /* MultiCameraGrid.swift */; };
+		65C3653C2F4DC18B0061C202 /* ScoreboardControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C3653B2F4DC1840061C202 /* ScoreboardControl.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		65C365252F4DC0B40061C202 /* VARDashboard-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VARDashboard-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65C365282F4DC0B40061C202 /* VARDashboard_macOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VARDashboard_macOSApp.swift; sourceTree = "<group>"; };
+		65C3652A2F4DC0B40061C202 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		65C365382F4DC16B0061C202 /* MatchState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchState.swift; sourceTree = "<group>"; };
+		65C365392F4DC1790061C202 /* MultiCameraGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiCameraGrid.swift; sourceTree = "<group>"; };
+		65C3653B2F4DC1840061C202 /* ScoreboardControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardControl.swift; sourceTree = "<group>"; };
+		65C3653D2F4DC1920061C202 /* NodeBrowser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeBrowser.swift; sourceTree = "<group>"; };
+		65C3653E2F4DC1A00061C202 /* StreamReceiver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamReceiver.swift; sourceTree = "<group>"; };
+		65C3653F2F4DC1A90061C202 /* VideoDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDecoder.swift; sourceTree = "<group>"; };
+		65C365402F4DC1B60061C202 /* ReplayBufferManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplayBufferManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +48,11 @@
 		65C3651C2F4DC0B40061C202 = {
 			isa = PBXGroup;
 			children = (
-				65C365272F4DC0B40061C202 /* VARDashboard-macOS */,
+				65C365372F4DC0F20061C202 /* Config */,
+				65C365362F4DC0EB0061C202 /* Core */,
+				65C365352F4DC0E30061C202 /* Views */,
+				65C365342F4DC0DC0061C202 /* Models */,
+				65C365332F4DC0D10061C202 /* App */,
 				65C365262F4DC0B40061C202 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +63,51 @@
 				65C365252F4DC0B40061C202 /* VARDashboard-macOS.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		65C365332F4DC0D10061C202 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				65C365272F4DC0B40061C202 /* VARDashboard-macOS */,
+				65C365282F4DC0B40061C202 /* VARDashboard_macOSApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		65C365342F4DC0DC0061C202 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				65C365382F4DC16B0061C202 /* MatchState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		65C365352F4DC0E30061C202 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				65C3653B2F4DC1840061C202 /* ScoreboardControl.swift */,
+				65C365392F4DC1790061C202 /* MultiCameraGrid.swift */,
+				65C3652A2F4DC0B40061C202 /* DashboardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		65C365362F4DC0EB0061C202 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				65C365402F4DC1B60061C202 /* ReplayBufferManager.swift */,
+				65C3653F2F4DC1A90061C202 /* VideoDecoder.swift */,
+				65C3653E2F4DC1A00061C202 /* StreamReceiver.swift */,
+				65C3653D2F4DC1920061C202 /* NodeBrowser.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		65C365372F4DC0F20061C202 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +184,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65C3652B2F4DC0B40061C202 /* DashboardView.swift in Sources */,
+				65C365292F4DC0B40061C202 /* VARDashboard_macOSApp.swift in Sources */,
+				65C3653A2F4DC17F0061C202 /* MultiCameraGrid.swift in Sources */,
+				65C3653C2F4DC18B0061C202 /* ScoreboardControl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
